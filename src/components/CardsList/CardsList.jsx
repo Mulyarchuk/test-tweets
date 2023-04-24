@@ -61,7 +61,7 @@ const CardList = () => {
         <Cards key={user.id} user={user} changeData={changeData} />
       ))}
     </CardsList>
-     <LoadMoreBtn loadMore={handleLoadMore} />
+    {visible < users.length && <LoadMoreBtn loadMore={handleLoadMore} />}
     </>
   );
 };
