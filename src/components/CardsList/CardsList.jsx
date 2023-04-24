@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Cards from 'components/Cards/Cards';
 import LoadMoreBtn from 'components/LoadMore/LoadMore'
 import user from 'data/user.json';
-// import axios from 'axios';
+
 
 import { CardsList } from './CardList.styled';
 
