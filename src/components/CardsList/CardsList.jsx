@@ -8,9 +8,9 @@ import { CardsList } from './CardList.styled';
 
 
 const CardList = () => {
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(6);
   const handleLoadMore = ()=>{
-    setVisible((prevValue)=> prevValue + 3)
+    setVisible((prevValue)=> prevValue + 6)
   }
   
     const save = (key, value) => {
