@@ -53,12 +53,6 @@ const CardList = () => {
     setUsers(updateUsers);
   };
   
-//   const [data, setData] = useState("");
-//   useEffect(()=>{
-// axios.get("644035a0792fe886a88a2c08.mockapi.io").then((resp)=>{
-//   setData(resp.data);
-// })
-//   },[])
  
   return (
     <>
