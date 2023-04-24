@@ -40,7 +40,7 @@ const CardList = () => {
 
   useEffect(() => {
     storage.save('users-list', users);
-  }, [users]);
+  });
 
   const changeData = (id, followers, isFollow) => {
     const updateUsers = users.map(user => {
