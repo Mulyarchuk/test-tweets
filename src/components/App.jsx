@@ -1,21 +1,18 @@
 
-import { Container, Header, Link } from './App.styled';
-import { lazy } from "react";
+import { Container } from './App.styled';
+// import { lazy } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
+import Tweets from './Pages/Tweets';
+import Home from './Pages/Home';
 
-const Home = lazy (()=>import(`./Pages/Home`));
-const Tweets = lazy (()=>import(`./Pages/Tweets`));
+
+// const Home = lazy (()=>import(`./Pages/Home`));
+// const Tweets = lazy (()=>import(`./Pages/Tweets`));
 
 
 export const App = () => {
   return (
     <Container>
-    <Header>
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/tweets">Tweets</Link>
-    </nav>
-    </Header>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/tweets" element={<Tweets/>} />
